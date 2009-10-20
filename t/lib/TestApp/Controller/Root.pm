@@ -4,8 +4,8 @@ use namespace::autoclean;
 
 BEGIN { 
     extends 'Catalyst::Controller';
-    with 'CatalystX::Elements::Comments';
 }
+with 'CatalystX::Elements::Comments';
 
 __PACKAGE__->config(namespace => '');
 

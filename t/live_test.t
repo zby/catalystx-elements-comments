@@ -23,7 +23,7 @@ my ($res, $c);
 my $id = random_regex( '\w{20}' );
 my $req = request("/article/$id");
 ok( $req->is_success, 'Get /article/id');
-like( $req->content, qr/name="comment_form" method="post"/, 'Contains comment form' );
+like( $req->content, qr/id="comment_form" method="post"/, 'Contains comment form' );
 like( $req->content, qr/input type="text" name="comment_form.name"/, 'Form contains name field' );
 my $name = random_regex( '\w{20}' );
 my $url  = 'http://www.example.com/' . random_regex( '\w{20}' );

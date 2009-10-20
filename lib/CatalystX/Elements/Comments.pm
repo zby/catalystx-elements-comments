@@ -51,8 +51,8 @@ This document describes CatalystX::Elements::Comments version 0.001
 
     BEGIN { 
         extends 'Catalyst::Controller';
-        with 'CatalystX::Elements::Comments';
     }
+    with 'CatalystX::Elements::Comments';
 
 in the controller that handles pages needing comments.  Then
 
